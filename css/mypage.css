@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    transition: all 3004s 50ms linear;
+}
+
+section,
+header {
+    min-height: 100vh;
+
+    /* Мінімальна висота секцій 100% від висоти viewport */
+   
+    /* Внутрішні відступи для секцій */
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 80%;
+    /* Ширина контейнера відносно ширини батьківського елемента */
+    max-width: 1600px;
+    /* Обмеження максимальної ширини */
+    margin: auto;
+    /* Центрування по-горизонталі */
+    position: relative;
+ 
+}
+.t1{
+    text-align: left;
+}
+header {
+    background-color:#fff;
+}
+
+#s1 {
+   
+
+
+}
+.container {
+    color: darkslateblue;
+}
+
+#s3 {
+    background-color:#fff;
+    font-size: 70px;
+    margin-right: 50%;
+    margin-bottom: 100%;
+
+}
+
+/* Кольори фону для секцій */
+#s2{ }
+#s4 {
+    background-color: #fff;
+    font-size: 70px;
+    margin-left: 0%;
+
+
+}
+
+nav {
+
+    position: fixed;
+    min-height: 50px;
+    max-height: 50px;
+    overflow: hidden;
+    width: 100%;
+    opacity: 1;
+    top: 0px;
+    transition: all 0.5s;
+    z-index: 2;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav.open-nav {
+    max-height: 100vh;
+}
+
+nav.open-nav .navbar {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+
+    opacity: 1;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+    line-height: 1.5;
+}
+
+nav ul a {
+    color:darkslateblue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul a.active {z-index: 1000;}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 200ms ease-in;
+}
+
+.scrollup {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 100px;
+}
+
+.overlay h1 {
+    text-align: left;
+    color: #fff;
+    font-size: 70px;
+    margin-top: 17%;
+}
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.fullwidth-bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 0%;
+    overflow: hidden;
+    z-index: 100;
+    max-width: 100%;
+   
+
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+     
+    
+
+}
+
+.video-layer {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 150;
+    
+     
+}
+
+.ph {
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+    left: 60%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    position: relative;
+}
+h1 {
+  margin-bottom: 5%;
+    margin-top: 20%;
+    font-size: 30px;
+   right: 50%;
+    
+}
+
+
+@media only screen and (max-width: 766px) {
+    nav .navbar {
+        display: none;
+        
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 2rem;
+    }
+
+    .video {
+        max-width: 100%;
+    }

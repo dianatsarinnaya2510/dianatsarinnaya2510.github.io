@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header .block {
+    background-color:seagreen;
+    margin: auto;
+    max-width: 600px;
+    width: 80%;
+    padding: 50px;
+    
+}
+transition: all .2s;
